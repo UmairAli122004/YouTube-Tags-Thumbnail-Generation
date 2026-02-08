@@ -57,11 +57,6 @@ and processes it to generate meaningful and relevant video metadata.
 
 ---
 
-## 🧩 Project Architecture
-
-
----
-
 ## ⚙️ How the Project Works
 
 1. User enters a video topic or keyword
