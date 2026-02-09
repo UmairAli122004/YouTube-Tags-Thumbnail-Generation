@@ -1,4 +1,4 @@
-# 🎥 YouTube Tools Generation Project
+# 🎥 YouTube-Tags-Thumbnail-Generation Project
 
 A web-based application that helps YouTube content creators generate 
 SEO-optimized tags, video descriptions, titles, and thumbnail text ideas 
@@ -8,7 +8,7 @@ using real-time YouTube data.
 
 ## 📖 Project Overview
 
-The **YouTube Tools Generation** project is designed to automate YouTube SEO tasks
+The **YouTube-Tags-Thumbnail-Generation** project is designed to automate YouTube SEO tasks
 for content creators. Many YouTubers struggle with choosing the right tags,
 titles, and descriptions, which directly affects video visibility and reach.
 
@@ -94,6 +94,3 @@ and processes it to generate meaningful and relevant video metadata.
 This project demonstrates practical backend development skills, real-time API
 integration, and problem-solving ability by building a useful tool for YouTube
 content creators.
-
----
-
