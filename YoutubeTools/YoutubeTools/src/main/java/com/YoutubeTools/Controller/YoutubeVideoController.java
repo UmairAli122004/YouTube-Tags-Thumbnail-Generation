@@ -14,11 +14,6 @@ public class YoutubeVideoController {
     private final YoutubeService youtubeService;
     private final ThumbnailService thumbnailService;
 
-//    @GetMapping("/youtube/video-details")
-//    public String showVideoForm(){
-//        return "video-details";
-//    }
-
     @PostMapping("/youtube/video-details")
     public String fetchVideoDetails(@RequestParam String videoUrlOrId, Model model){
         String videoId = thumbnailService.extractVideoId(videoUrlOrId);
@@ -37,3 +32,4 @@ public class YoutubeVideoController {
         return "video-details";
     }
 }
+
