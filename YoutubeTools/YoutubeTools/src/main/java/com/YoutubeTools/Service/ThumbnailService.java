@@ -17,26 +17,12 @@ public class ThumbnailService {
                 "(?:https?:\\/\\/)?(?:www\\.)?youtube\\.com\\/embed\\/([a-zA-Z0-9_-]{11})"
         };
         for (String pattern : patterns) {
-            /*
-             *  Matcher matcher = Pattern.compile(pattern).matcher(url);
-             *   Matcher:
-             *          1) A type name from java.util.regex.Matcher.
-             *          2) Represents the result of applying a compiled regular expression (a Pattern) to a particular input sequence.
-             *          3) Provides methods like find(), matches(), group(int), start(), end(), reset() etc.
-             *          4) Not thread-safe — do not share one Matcher between threads without synchronization.
-             */
             Matcher matcher = Pattern.compile(pattern).matcher(url);
             if (matcher.find()) {
                 return matcher.group(1);
-                /*
-                 * return matcher.group(1);
-                 *  Here:
-                 *       v= is fixed
-                 *       ([a-zA-Z0-9_-]+) is group 1
-                 *       → It captures the actual video ID
-                 */
             }
         }
         return null;
     }
 }
+
