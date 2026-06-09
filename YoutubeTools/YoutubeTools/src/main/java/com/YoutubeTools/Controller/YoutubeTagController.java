@@ -43,11 +43,11 @@ public class YoutubeTagController {
             model.addAttribute("relatedVideos",result.getRelatedVideos());
 
             String allTags = result.getRelatedVideos()
-                    .stream()                                        //Start stream of videos
-                    .flatMap(v -> v.getTags().stream())              //Flatten all tag lists into a single stream
-                    .distinct()                                      //Remove duplicates
-                    .map(tag -> "#" + tag.trim())                    //Add # to each tag
-                    .collect(Collectors.joining(" "));       //Convert into one string
+                    .stream()                               
+                    .flatMap(v -> v.getTags().stream())           
+                    .distinct()                                   
+                    .map(tag -> "#" + tag.trim())                    
+                    .collect(Collectors.joining(" "));      
 
             model.addAttribute("allTagsAsString", allTags);
             return "home";
