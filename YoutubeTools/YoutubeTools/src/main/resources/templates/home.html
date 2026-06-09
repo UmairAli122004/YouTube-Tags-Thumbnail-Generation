@@ -87,10 +87,8 @@
     </form>
   </div>
 
-  <!-- Show error if any -->
   <div th:if="${error}" class="error rounded-lg p-4 mb-4" th:text="${error}"></div>
 
-  <!-- Show results -->
   <div th:if="${primaryVideo != null}">
     <div class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg p-6 mb-8">
       <div class="flex justify-between items-center mb-4">
