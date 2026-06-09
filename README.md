@@ -51,9 +51,6 @@ and processes it to generate meaningful and relevant video metadata.
 - YouTube Data API
 - JSON Processing
 
-### Database
-- ❌ Not Used  
-> The application works on real-time YouTube data, so no database is required.
 
 ---
 
